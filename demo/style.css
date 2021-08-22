@@ -1,0 +1,302 @@
+body
+{
+margin:0;
+padding:0;
+box-sizing:border-box;}
+
+#home::before{
+	content:"";
+	position:absolute;
+	top:0;
+	right:0;
+	background:url('blue.jpg') no-repeat center center/cover;
+	height:1200px;
+	width:100%;
+	z-index:-1;
+	opacity:.8;
+}
+.name{
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+	margin-top: 50px;
+	font-size:40px;
+	
+}
+.heading{
+	text-align:center;
+	font-size:20px;
+}
+
+
+.navbar{
+	display:flex;
+	justify-content:center;
+	background-color:rgba(0, 0, 0, 0.5);
+	
+}
+.navbar a{
+	text-align:center;
+	color:white;
+	font-size:20px;
+	text-transform:uppercase;
+	padding:14px 28px;
+	text-decoration:none;
+}
+.navbar a:hover{
+	background-color:white;
+	color:black;
+	border-radius: white 10px;
+	text-decoration: none;	
+}
+#bar{
+	display:none;
+}
+.bararea{
+	background-color:rgba(0, 0, 0, 0.5);
+	border-bottom:2px solid white;
+	color:white;
+	padding:10px;
+	display:flex;
+	justify-content:flex-end;
+}
+.bararea label{
+	background-color:rgba(0, 0, 0, 0.5);;
+	height:45px;
+	width:50px;
+	color:black;
+	border-radius:6px;
+	cursor:pointer;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+
+}
+.bararea label span{
+	background-color:white;
+	height:3px;
+	width:70%;
+	margin:2px 0px;
+
+}
+.bararea{
+			display:none;
+		}
+
+ @media screen and (max-width:700px){
+
+	.navbar{
+		flex-direction:column;
+		display:none;}
+
+		#bar:checked + .navbar{
+
+			display:flex;
+		}
+		.bararea{
+			display:flex;
+		}
+		
+	}
+
+
+
+#portfoli::before{
+	content:"";
+	position:absolute;
+	top:0;
+	right:0;
+	background:url('blue.jpg') no-repeat center center/cover;
+	height:1200px;
+	width:100%;
+	z-index:-1;
+	opacity:.8;
+}
+ .photo1 img{
+	width:200px;
+	height:auto;
+}
+.gallery{
+	margin:0 0.65rem;
+}
+.photo1{
+	height:300px;
+	margin:0.6rem;
+
+}
+@media(min-width:640px){
+	.gallery{
+		display:grid;
+		grid-template-columns:repeat(2, 1fr);
+		grid-template-rows:repeat(5, 300px);
+		grid-auto-flow:row dense;
+
+	}
+}
+
+
+#cv::before{
+	content:"";
+	position:absolute;
+	top:0;
+	right:0;
+	background:url('blue.jpg') no-repeat center center/cover;
+	height:1300px;
+	width:100%;
+	z-index:-1;
+	opacity:.8;
+}
+.resume-box{
+	width:700px;
+	height:1120px;
+	margin:0 auto;
+	background-color:white;
+}
+.box-outer{
+	padding:20px;
+}
+.box-1st{
+	background-color:#26252d;
+	width:50%;
+	float:left;
+	height:1120px;
+}
+.box-2nd{
+	width:35%;
+	float:left;
+	padding:20px;
+}
+
+.content{
+	padding:20px;
+
+}
+h1{
+	color:white;
+	font-weight:200px;
+	text-transform:uppercase;
+}
+.detail{text-align:center;}
+.detail h1 {
+	font-size:25px;
+	color:black;
+	text-decoration:underline;
+	margin-top:-10px;
+}
+.intro h1 p{
+	color:black;
+	margin-top:10px;
+	text-decoration:underline;
+
+}
+
+.hr{
+	height:8px;
+	border:none;
+	background-color:black;
+}
+
+#contact::before{
+	content:"";
+	position:absolute;
+	top:0;
+	right:0;
+	background:url('blue.jpg') no-repeat center center/cover;
+	height:1200px;
+	width:100%;
+	z-index:-1;
+	opacity:.8;
+}
+
+
+
+ #site::before{
+	content:"";
+	position:absolute;
+	top:0;
+	right:0;
+	background:url('blue.jpg') no-repeat center center/cover;
+	height:65px;
+	width:100%;
+	z-index:-1;
+	opacity:.8;
+}
+.image{
+	display:grid;
+	grid-template-rows: 10px;
+}
+.contact-form{
+	width:150%;
+	max-width:300px;
+	position:absolute;
+	top:75%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	margin:0 auto;
+	padding:5px 30px;
+	box-sizing:border-box;
+	border-radius:5px;
+	text-align:center;
+	box-shadow:0 0 20px black;
+
+}
+
+.contact-form h2{
+
+	font-weight:10px;
+	color:white;
+}
+.texte{
+	display:flex;
+	flex-direction:column;
+	border:1px solid black;
+	margin:7px 0;
+	padding:0px 5px;
+	border-radius:10px;
+}
+.texte label{
+	display:block;
+	text-align:left;
+	color:white;
+	text-transform:uppercase;
+}
+.texte input,.texte textarea{
+	width:80%;
+	border:none;
+	background:none;
+	outline:none;
+	font-size:15px;
+	margin-top:4px;
+}
+.bnt{
+	display:inline-block;
+	background:black;
+	padding:3px 0;
+	color:white;
+	text-transform:uppercase;
+	cursor:pointer;
+	margin-top:5px;
+	width:100%;
+}
+.bnt:hover{
+	background-color:red;
+}
+
+@media  (max-width:800px){
+.box2{display:block;
+	background-color:#fff;
+
+}
+.box1{
+	display:block;
+}
+.resume-box{
+	width:90%;
+	margin:10px auto;
+	flex-direction:column;
+
+}
+.box1, .box2{
+	width:100%;
+}
